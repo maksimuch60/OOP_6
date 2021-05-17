@@ -73,8 +73,8 @@ void Queue<T>::erase(int pos)
 template<class T>
 void Queue<T>::emplace(int pos, T obj)
 {
-	vec.erase(vec.begin() + pos - 1);
 	vec.insert(vec.begin() + pos - 1, obj);
+	vec.erase(vec.begin() + pos);
 }
 
        
